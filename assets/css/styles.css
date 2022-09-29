@@ -162,8 +162,9 @@ img {
   background-color: var(--first-color);
 }
 
-.nav__logo {
-  color: var(--second-color);
+.nav__logo img{
+  height: 100%;
+  width: 60px;
 }
 
 .nav__toggle {
@@ -266,12 +267,17 @@ img {
 }
 
 .about__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   justify-self: center;
 }
 
 .about__img img {
-  width: 200px;
-  border-radius: 45rem;
+  width: 250px;
+  height: 250px;
+  border: 2px solid var(--first-color);
+  border-radius: 60%;
 }
 
 /* ===== SKILLS =====*/
@@ -520,6 +526,7 @@ img {
     padding-top: 2rem;
   }
   .about__img img {
+  
     width: 300px;
   }
   .skills__container {
